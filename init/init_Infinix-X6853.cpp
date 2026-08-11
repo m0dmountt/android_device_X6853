@@ -28,7 +28,7 @@ void vendor_load_properties()
         property_override(string("ro.product.") + prop + string("name"), "X6853-OP");
         property_override(string("ro.product.") + prop + string("device"), "Infinix-X6853");
         property_override(string("ro.product.") + prop + string("model"), "Infinix X6853");
-        property_override(string("ro.product.") + prop + string("marketname"), "Infinix HOT 60 PRO");
-        property_override(string("ro.product.system.") + prop + string("device"), "Infinix HOT 60 PRO");
+        property_override(string("ro.product.") + prop + string("marketname"), "Infinix NOTE 40");
+        property_override(string("ro.product.system.") + prop + string("device"), "Infinix NOTE 40");
     }
 }
