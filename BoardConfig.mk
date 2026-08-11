@@ -55,7 +55,7 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 BOARD_MKBOOTIMG_ARGS += --dtb_offset $(BOARD_DTB_OFFSET)
 
 # AVB
-BOARD_AVB_ENABLE := false
+BOARD_AVB_ENABLE := true
 
 # Partitions configs
 BOARD_FLASH_BLOCK_SIZE := 262144
@@ -172,6 +172,3 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_Infinix-X6853
 
 # Maintainer (optional)
 TW_MAINTAINER := Opek
-
-# AVB Vbmeta
-BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 2
