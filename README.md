@@ -2,11 +2,11 @@
 - Device: Infinix NOTE 40
 - By @Opek_Furina
 
-# device Information 
+# Device Information 
 - Codename: X6853
 - Paltform: MT6789
 - Manufacture: Infinix
 - Vndk target: 31
 
-# firmware base
+# Firmware base
 - XOS 15.1.2
