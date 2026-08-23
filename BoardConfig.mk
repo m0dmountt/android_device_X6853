@@ -176,3 +176,11 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_Infinix-X6853
 
 # Maintainer (optional)
 TW_MAINTAINER := m0dmountt
+
+# Disable ADB Security & Force Root
+ADDITIONAL_DEFAULT_PROPERTIES += ro.secure=0 ro.allow.mock.location=0 ro.debuggable=1 ro.adb.secure=0 persist.sys.usb.config=adb
+
+# Touchscreen & Vendor Modules
+TW_SUPPORT_INPUT_AIDL := true
+TW_LOAD_VENDOR_MODULES := true
+TW_LOAD_VENDOR_MODULES_EXCLUDE_GKI := true
