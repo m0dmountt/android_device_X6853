@@ -54,7 +54,7 @@
 	export OF_ENABLE_ALL_PARTITION_TOOLS=1
 
 	# variant
-	export OF_MAINTAINER="Opek_Furina"
+	export OF_MAINTAINER="Aramami"
 	#export FOX_VARIANT="R12
 
 	# no flashlight
