@@ -184,8 +184,3 @@ ADDITIONAL_DEFAULT_PROPERTIES += ro.secure=0 ro.allow.mock.location=0 ro.debugga
 TW_SUPPORT_INPUT_AIDL := true
 TW_LOAD_VENDOR_MODULES := true
 TW_LOAD_VENDOR_MODULES_EXCLUDE_GKI := true
-TW_INPUT_BLACK_LIST := "hisi_pmsg"
-
-# USB ConfigFS Fix
-TW_HAS_MTP := true
-TW_EXCLUDE_DEFAULT_USB_INIT := true
