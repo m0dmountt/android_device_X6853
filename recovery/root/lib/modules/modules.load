@@ -179,3 +179,7 @@ tkv_recovery.ko
 sd_tray.ko
 mtk-pwm.ko
 mtk_irtx_pwm.ko
+ts_scp_common.ko
+gt9886.ko
+gt9896s.ko
+adaptive-ts.ko

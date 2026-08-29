@@ -109,8 +109,14 @@ TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
 # Crypto
-TW_INCLUDE_CRYPTO := false
-TW_INCLUDE_CRYPTO_FBE := false
+# NOTE: recovery.fstab declares /data as FBE-encrypted f2fs
+# (flags=fileencryption=aes-256-xts:aes-256-cts:v2+inlinecrypt_optimized).
+# With crypto support compiled OUT, TWRP has no way to decrypt that
+# partition before mounting it -- it will look like garbage f2fs metadata
+# and mount will fail. Re-enabled to match the fstab + TW_USE_FSCRYPT_POLICY
+# / OF_DEFAULT_KEYMASTER_VERSION already set below.
+TW_INCLUDE_CRYPTO := true
+TW_INCLUDE_CRYPTO_FBE := true
 TW_USE_FSCRYPT_POLICY := 2
 TW_FORCE_KEYMASTER_VER := true
 OF_DEFAULT_KEYMASTER_VERSION := 4.1
